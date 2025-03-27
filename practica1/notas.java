@@ -12,7 +12,7 @@ import java.util.Scanner;
 * Declaracion de variables que almacenaran los datos.
 **/
 	//declaramos la variables que nos hacen falta
-	double Unidad1, uf2, uf3;
+	double Unidad1, Unidad2, uf3;
 	double acu1, acu2, acu3, def;
 	
 /**
@@ -31,7 +31,7 @@ import java.util.Scanner;
 		System.out.print("ingrese nota 1: ");
 		Unidad1= entrada.nextDouble();
 		System.out.print("ingrese nota 2: ");
-		uf2= entrada.nextDouble();
+		Unidad2= entrada.nextDouble();
 		System.out.print("ingrese nota 3: ");
 		uf3= entrada.nextDouble();
 	}
@@ -46,7 +46,7 @@ import java.util.Scanner;
 		}else {
 			System.out.println(" nota1 correcta");
 		}
-		if (uf2>10) {
+		if (Unidad2>10) {
 			System.out.println(" nota2 mal introducida");
 		}else {
 			System.out.println(" nota2 correcta");
@@ -64,7 +64,7 @@ import java.util.Scanner;
 	// metodo para calcular nota
 	public void Calculonotas() {
 		acu1= Unidad1*0.35;
-		acu2 = uf2 * 0.35;
+		acu2 = Unidad2 * 0.35;
 		acu3 = uf3 * 0.30;	
 		def = acu1 + acu2+ acu3;
 
@@ -75,9 +75,9 @@ import java.util.Scanner;
 	}
 	public void Mostrar() {
 		//print ln lo que hace es que al terminar el print baja la linea
-		System.out.println(" notas introducidas son:");
+		System.out.println(" NOTAS INTRODUCIDAS:");
 		System.out.println(" nota1 = " + Unidad1);
-		System.out.println(" nota2 = " + uf2);
+		System.out.println(" nota2 = " + Unidad2);
 		System.out.println(" nota3 = " + uf3);
 		System.out.println(" acumuado 1 = "+ acu1);
 		System.out.println(" acumuado 2 = "+ acu2);
